@@ -1,5 +1,7 @@
 namespace LibreInventory {
     public class Application : Gtk.Application {
+        public LibreInventory.Window window;
+
         public Application() {
             Object (
                 application_id: "com.github.librepos.libreinventory",
@@ -8,7 +10,7 @@ namespace LibreInventory {
         }
 
         protected override void activate () {
-            var window = new LibreInventory.Window (this);
+            window = new LibreInventory.Window (this);
         }
     }
 }

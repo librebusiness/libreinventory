@@ -2,6 +2,8 @@ project('com.github.librepos.libreinventory', 'vala', 'c')
 
 sources = files(
     'src/Main.vala',
+    'src/ProductsPage.vala',
+    'src/DashboardPage.vala',
     'src/Window.vala',
     'src/Application.vala',
 )

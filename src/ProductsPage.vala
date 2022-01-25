@@ -34,6 +34,12 @@ namespace LibreInventory {
             attach (button, 3, 4, 1, 1);
 
             button = new Gtk.Button.with_label ("Create a Product");
+            button.clicked.connect (() => {
+                var new_product_window = new LibreInventory.NewProductWindow ();
+                new_product_window.destroy.connect (() => {
+                    stdout.printf ("New Product Window Closed\n");
+                });
+            });
             attach (button, 4, 4, 1, 1);
         }
     }

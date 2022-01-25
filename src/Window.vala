@@ -3,8 +3,13 @@ namespace LibreInventory {
         Gtk.Stack stack;
         Gtk.HeaderBar header_bar;
         Gtk.StackSwitcher stack_switcher;
-        LibreInventory.ProductsPage products_page;
         LibreInventory.DashboardPage dashboard_page;
+        LibreInventory.CustomersPage customers_page;
+        LibreInventory.ProductsPage products_page;
+        LibreInventory.VendorsPage vendors_page;
+        //  LibreInventory.OrdersPage orders_page;
+        //  LibreInventory.PurchasesPage purchases_page;
+        //  LibreInventory.SettingsPage settings_page;
 
         public Window(Gtk.Application app) {
             Object (
@@ -34,8 +39,14 @@ namespace LibreInventory {
             dashboard_page = new LibreInventory.DashboardPage ();
             stack.add_titled (dashboard_page, "Dashboard", "Dashboard");
 
+            customers_page = new LibreInventory.CustomersPage ();
+            stack.add_titled (customers_page, "Customers", "Customers");
+
             products_page = new LibreInventory.ProductsPage ();
             stack.add_titled (products_page, "Products", "Products");
+
+            vendors_page = new LibreInventory.VendorsPage ();
+            stack.add_titled (vendors_page, "Vendors", "Vendors");
 
             add (stack);
         }

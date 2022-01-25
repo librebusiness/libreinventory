@@ -4,6 +4,8 @@ sources = files(
     'src/Main.vala',
     'src/ProductsPage.vala',
     'src/DashboardPage.vala',
+    'src/VendorsPage.vala',
+    'src/CustomersPage.vala',
     'src/NewProductWindow.vala',
     'src/Window.vala',
     'src/Application.vala',

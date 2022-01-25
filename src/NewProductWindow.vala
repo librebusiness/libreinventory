@@ -8,6 +8,8 @@ namespace LibreInventory {
         public Gtk.Entry price_entry;
         public Gtk.Entry units_left_entry;
         public Gtk.HeaderBar header_bar;
+        Gtk.Button cancel_button;
+        Gtk.Button create_button;
 
         public NewProductWindow () {
             box = new Gtk.Box (Gtk.Orientation.VERTICAL, 8);
@@ -47,10 +49,14 @@ namespace LibreInventory {
                 subtitle = "New Product"
             };
 
-            var button = new Gtk.Button.with_label ("Cancel");
-            header_bar.pack_start (button);
-            button = new Gtk.Button.with_label ("Create");
-            header_bar.pack_end (button);
+            cancel_button = new Gtk.Button.with_label ("Cancel");
+            cancel_button.clicked.connect (() => {
+                destroy ();
+            });
+            header_bar.pack_start (cancel_button);
+
+            create_button = new Gtk.Button.with_label ("Create");
+            header_bar.pack_end (create_button);
 
             add (box);
 

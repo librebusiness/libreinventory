@@ -14,5 +14,7 @@ Libraries:
 - GTK+-3.0
 - SQLite3
 
+Build system: Meson + ninja
+
 ## Structure
 OOP concepts

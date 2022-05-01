@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="libreinventory">
+	<schema id="com.otonielreyes.LibreInventory" path="/com/otonielreyes/LibreInventory/">
+    <key name="first-launch" type="b">
+      <default>true</default>
+      <summary>Is this the first time the user run the app?</summary>
+      <description>Used to decide weather to show or not the database config window.</description>
+    </key>
+	</schema>
+</schemalist>

@@ -1,0 +1,7 @@
+data/com.otonielreyes.LibreInventory.desktop.in
+data/com.otonielreyes.LibreInventory.appdata.xml.in
+data/com.otonielreyes.LibreInventory.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+

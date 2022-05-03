@@ -170,6 +170,22 @@ public class LibreInventory.Settings.Database.ConfigGrid : Gtk.Grid {
       string database_name = database_name_entry.get_text ();
       settings.set_string (fields_prefix.printf ("database-name"), database_name);
     }
+
+    var dialog = new Gtk.Dialog ();
+    dialog.set_default_size (300, 0);
+    dialog.set_title ("Success");
+    dialog.set_modal (true);
+    dialog.add_button ("Ok", 1);
+    dialog.get_widget_for_response (1).set_margin_start (12);
+    dialog.get_widget_for_response (1).set_margin_end (12);
+    dialog.get_widget_for_response (1).set_margin_bottom (12);
+    dialog.get_content_area ().set_margin_top (12);
+    dialog.get_content_area ().set_margin_start (12);
+    dialog.get_content_area ().set_margin_end (12);
+    dialog.get_content_area ().set_margin_bottom (12);
+    dialog.get_content_area ().append (new Gtk.Label ("Successful Save!"));
+    dialog.response.connect (() => { dialog.destroy(); });
+    dialog.present ();
   }
 
   public void test_database_connection () {}

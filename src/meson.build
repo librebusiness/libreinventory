@@ -3,12 +3,15 @@ libreinventory_sources = [
   'window.vala',
   'application.vala',
 
+  'SecretManagement/DatabaseData.vala',
+
   'Settings/Database/Window.vala',
   'Settings/Database/ConfigGrid.vala',
 ]
 
 libreinventory_deps = [
   dependency('gtk4'),
+  dependency('libsecret-1'),
 ]
 
 gnome = import('gnome')

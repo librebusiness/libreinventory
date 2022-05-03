@@ -6,5 +6,66 @@
       <summary>Is this the first time the user run the app?</summary>
       <description>Used to decide weather to show or not the database config window.</description>
     </key>
+	  <key name="primary-database-engine" type="s">
+	    <default>""</default>
+	    <summary>Database Engine</summary>
+	    <description></description>
+	  </key>
+	  <key name="primary-database-path" type="s">
+	    <default>"./data"</default>
+	    <summary>Database path (just folder) to store the sqlite3 database file</summary>
+	    <description></description>
+	  </key>
+	  <key name="primary-database-host" type="s">
+	    <default>"127.0.0.1"</default>
+	    <summary>Host for connecting to mysql or postgresql</summary>
+	    <description></description>
+	  </key>
+	  <key name="primary-database-port" type="s">
+	    <default>""</default>
+	    <summary>Database server connection port</summary>
+	    <description></description>
+	  </key>
+	  <key name="primary-database-user" type="s">
+	    <default>"root"</default>
+	    <summary>Database server user name</summary>
+	    <description></description>
+	  </key>
+	  <key name="primary-database-database-name" type="s">
+	    <default>"free_business_primary_data"</default>
+	    <summary>File/Database name</summary>
+	    <description></description>
+	  </key>
+
+	  <key name="secondary-database-engine" type="s">
+	    <default>""</default>
+	    <summary>Database Engine</summary>
+	    <description></description>
+	  </key>
+	  <key name="secondary-database-path" type="s">
+	    <default>"./data"</default>
+	    <summary>Database path (just folder) to store the sqlite3 database file</summary>
+	    <description></description>
+	  </key>
+	  <key name="secondary-database-host" type="s">
+	    <default>"127.0.0.1"</default>
+	    <summary>Host for connecting to mysql or postgresql</summary>
+	    <description></description>
+	  </key>
+	  <key name="secondary-database-port" type="s">
+	    <default>""</default>
+	    <summary>Database server connection port</summary>
+	    <description></description>
+	  </key>
+	  <key name="secondary-database-user" type="s">
+	    <default>"root"</default>
+	    <summary>Database server user name</summary>
+	    <description></description>
+	  </key>
+	  <key name="secondary-database-database-name" type="s">
+	    <default>"free_business_secondary_data"</default>
+	    <summary>File/Database name</summary>
+	    <description></description>
+	  </key>
 	</schema>
 </schemalist>

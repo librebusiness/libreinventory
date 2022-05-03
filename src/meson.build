@@ -4,6 +4,7 @@ libreinventory_sources = [
   'application.vala',
 
   'Settings/Database/Window.vala',
+  'Settings/Database/ConfigGrid.vala',
 ]
 
 libreinventory_deps = [

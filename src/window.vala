@@ -20,10 +20,12 @@ namespace LibreInventory {
     [GtkTemplate (ui = "/com/otonielreyes/LibreInventory/window.ui")]
     public class Window : Gtk.ApplicationWindow {
         [GtkChild]
-        private unowned Gtk.Label label;
+        private unowned Gtk.HeaderBar header_bar;
 
         public Window (Gtk.Application app) {
             Object (application: app);
+
+            header_bar.set_title_widget (new Gtk.Label ("Libre Inventory"));
         }
     }
 }

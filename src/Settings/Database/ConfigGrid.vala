@@ -186,6 +186,8 @@ public class LibreInventory.Settings.Database.ConfigGrid : Gtk.Grid {
     dialog.get_content_area ().append (new Gtk.Label ("Successful Save!"));
     dialog.response.connect (() => { dialog.destroy(); });
     dialog.present ();
+
+    settings.set_boolean ("first-launch", false);
   }
 
   public void test_database_connection () {}
